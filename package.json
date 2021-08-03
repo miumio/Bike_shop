@@ -1,7 +1,9 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "Bike shop",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "HTML academy accelerate project",
+  "author": "asya nikolskaya",
+  "license": "unlicensed",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -47,7 +49,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.15"
+    "node": "^8.15"
   },
   "dependencies": {
     "del": "^4.1.1"
