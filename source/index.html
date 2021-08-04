@@ -8,6 +8,51 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Магазин Велосипедов</h1>
+  <header class="header">
+    <div class="header__container">
+      <nav class="header__nav nav nav--nojs">
+        <button class="nav__toggler btn" aria-label="Toggler"></button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Виды велосипедов</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Видео про велосипеды</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <h1>Магазин Велосипедов</h1>
+      <div class="intro__container">
+        <section class="intro__about about">
+          <img src="img/logo.svg" width="67" height="20" alt="Логотип">
+          <h2>Мы продаем велосипеды</h2>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </section>
+        <section class="intro__form form">
+          <h2>Оставить заявку для подбора велосипеда</h2>
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label>Введите Ваше Имя
+              <input type="text" id="data-name" name="name">
+            </label>
+            <label>Введите Ваш номер телефона
+              <input type="tel" id="data-phone" name="phone">
+            </label>
+            <button type="submit" class="form__btn btn">Подобрать велосипед мечты</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
