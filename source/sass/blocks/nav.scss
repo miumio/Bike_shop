@@ -1,5 +1,6 @@
 .nav {
   @media (max-width: $tablet) {
+    text-align: left;
     background-color: $white;
   }
 }
@@ -9,10 +10,52 @@
 
   &--show {
     @media (max-width: $tablet) {
+      display: block;
       position: absolute;
       top: 0;
       right: 0;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 10;
     }
+  }
+}
+
+.nav--closed .nav__toggler::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 14px;
+  width: 22px;
+  height: 1px;
+  background-color: $black;
+  box-shadow:
+    0 6px 0 0 $black,
+    0 12px 0 0 $black;
+}
+
+.nav--opened .nav__toggler {
+  background-color: $white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    // top: 25px;
+    right: 13px;
+    width: 26px;
+    height: 1px;
+    background-color: $grey-medium;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -28,6 +71,11 @@
 
   @media (max-width: $tablet) {
     display: block;
+    margin-top: 55px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: 100px;
   }
 }
 
@@ -55,8 +103,12 @@
   }
 }
 
-// @media (max-width: $tablet) {
-//   .nav--nojs .nav__toggler {
-//     display: none;
-//   }
-// }
+@media (max-width: $tablet) {
+  .nav--nojs .nav__toggler {
+    display: none;
+  }
+
+  .nav--closed .nav__list {
+    display: none;
+  }
+}
