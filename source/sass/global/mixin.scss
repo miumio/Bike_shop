@@ -6,6 +6,7 @@
 
 @mixin container {
   margin: 0 auto;
+  padding: 0 30px;
   max-width: $max-width;
 }
 

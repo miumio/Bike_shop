@@ -1,0 +1,31 @@
+.form {
+  text-align: center;
+}
+
+.form h2 {
+  @include visually-hidden;
+}
+
+.form p {
+  margin: 3px 0 20px;
+  font-size: 18px;
+  line-height: 1.75rem;
+}
+
+.form input {
+  margin-bottom: 20px;
+  padding: 0 30px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 3rem;
+  color: rgba($grey-special, 0.5);
+  border: none;
+  border-radius: 6px;
+}
+
+.form button {
+  width: 100%;
+  line-height: 3rem;
+  border-radius: 6px;
+  font-size: 0.94rem;
+}
