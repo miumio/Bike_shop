@@ -1,0 +1,22 @@
+.contacts__link {
+  color: rgba($black, $alpha: 0.5);
+  text-decoration: none;
+
+  &:not(:first-child) {
+    margin-left: 127px;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+    margin-bottom: 22px;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contacts__link svg {
+  margin-bottom: -5px;
+  margin-right: 15px;
+}

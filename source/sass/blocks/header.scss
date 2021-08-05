@@ -7,7 +7,7 @@
 .header__nav {
   position: absolute;
   top: 0;
-  padding: 0 calc(50% - 438px);
+  padding: 0 calc(50vw - 438px);
   margin-bottom: 265px;
   width: 100%;
 
@@ -32,12 +32,12 @@
 
   @media (max-width: $tablet) {
     position: initial;
-    padding: 70px calc(50% - 160px) 70px;
+    padding: 70px calc(50vw - 160px) 70px;
     width: 100%;
     color: $black;
   }
 
   @media (max-width: $mobile) {
-    padding: 70px calc(50% - 144px) 74px;
+    padding: 70px calc(50vw - 144px) 74px;
   }
 }

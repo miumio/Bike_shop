@@ -1,0 +1,19 @@
+.footer {
+  padding: 100px 0;
+
+  @media (max-width: $tablet) {
+    padding: 50px 0;
+  }
+}
+
+.footer__map {
+  padding: 0 calc(50vw - 478px);
+
+  @media (max-width: $tablet) {
+    padding: 0 calc(50vw - 349px);
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
