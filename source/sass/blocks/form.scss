@@ -8,8 +8,14 @@
 
 .form p {
   margin: 3px 0 20px;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+
+  @media (max-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .form input {
@@ -21,6 +27,10 @@
   color: rgba($grey-special, 0.5);
   border: none;
   border-radius: 6px;
+
+  @media (max-width: $tablet) {
+    border: 1px solid $grey;
+  }
 }
 
 .form button {

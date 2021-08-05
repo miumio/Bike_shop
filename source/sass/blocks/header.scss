@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  min-height: 825px;
   font-weight: 300;
   color: $white;
 }
@@ -11,14 +10,18 @@
   padding: 0 calc(50% - 438px);
   margin-bottom: 265px;
   width: 100%;
+
+  @media (max-width: $tablet) {
+    position: relative;
+    margin: 0;
+    padding: 100px 0 138px;
+  }
 }
 
 .header__about {
-  padding: 319px calc(59% - 50px) 50px calc(50% - 440px);
-  min-height: 825px;
-  background: url("../img/intro-bg-desktop@1x.jpg") no-repeat center;
-  background-size: cover;
-  background-color: $black;
+  @media (max-width: $tablet) {
+    position: relative;
+  }
 }
 
 .header__form {
@@ -32,5 +35,9 @@
     padding: 70px calc(50% - 160px) 70px;
     width: 100%;
     color: $black;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 70px calc(50% - 144px) 74px;
   }
 }

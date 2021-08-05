@@ -1,12 +1,39 @@
 .about {
-  letter-spacing: -0.005em;
+  padding: 319px calc(59% - 50px) 50px calc(50% - 440px);
+  min-height: 825px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  background: url("../img/intro-bg-desktop@1x.jpg") no-repeat center;
+  background-size: cover;
+  background-color: $black;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 calc(50% - 240px);
+    min-height: 340px;
+    text-align: inherit;
+    background-image: url("../img/intro-bg-tablet@1x.jpg");
+    background-size: 100%;
+  }
+
+  @media (max-width: $mobile) {
+    min-height: 390px;
+    padding: 0 calc(50% - 144px);
+    background-image: url("../img/intro-bg-mobile@1x.jpg");
+  }
 }
 
 .about h2 {
   margin: 0;
   margin-bottom: 1.5rem;
-  font-size: 2.875rem;
+  font-size: 2.88rem;
   line-height: 4rem;
+
+  @media (max-width: $tablet) {
+    font-size: 1.88rem;
+  }
 }
 
 .about p {
@@ -14,9 +41,19 @@
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 300;
-  opacity: .8;
+  opacity: 0.8;
+
+  @media (max-width: $tablet) {
+    font-size: 1.13rem;
+  }
 }
 
 .about__logo {
   margin-bottom: 30px;
+
+  @media (max-width: $tablet) {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
 }

@@ -1,9 +1,19 @@
 .nav {
-  display: flex;
+  @media (max-width: $tablet) {
+    background-color: $white;
+  }
 }
 
 .nav__toggler {
   display: none;
+
+  &--show {
+    @media (max-width: $tablet) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .nav__list {
@@ -15,6 +25,18 @@
   width: 100%;
 
   border-bottom: 1px solid rgba($white, 0.7);
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.nav__item {
+  @media (max-width: $tablet) {
+    margin-bottom: 30px;
+    background: url("../img/arrow-down.svg") no-repeat center right 20px;
+    background-color: $light-grey;
+  }
 }
 
 .nav__link {
@@ -24,4 +46,17 @@
   text-decoration: none;
   color: inherit;
   opacity: 0.7;
+
+  @media (max-width: $tablet) {
+    padding: 16px 20px;
+    font-size: 1.25rem;
+    color: $dark;
+    opacity: 1;
+  }
 }
+
+// @media (max-width: $tablet) {
+//   .nav--nojs .nav__toggler {
+//     display: none;
+//   }
+// }
