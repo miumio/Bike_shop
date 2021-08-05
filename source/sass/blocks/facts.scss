@@ -1,0 +1,43 @@
+.facts h2 {
+  margin: 0 0 44px;
+  font-size: 1.88rem;
+  font-weight: 600;
+  color: $black-special;
+
+  @media (max-width: $mobile) {
+    font-size: 1.5rem;
+  }
+}
+
+.facts__list {
+  @include list-style-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.38rem;
+  line-height: 2.21rem;
+  letter-spacing: -0.5px;
+
+  @media (max-width: $mobile) {
+    display: block;
+    font-size: 1.13rem;
+  }
+}
+
+.facts__item {
+  flex: 0 0 256px;
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    width: 263px;
+  }
+}
+
+.facts__item span {
+  margin-bottom: 17px;
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: $green;
+}

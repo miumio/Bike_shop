@@ -1,0 +1,11 @@
+.main h1 {
+  @include visually-hidden;
+}
+
+.main__facts {
+  padding: 0 calc(50vw - 602px);
+
+  @media (max-width: $tablet) {
+    padding: 0 calc(50vw - 280px);
+  }
+}

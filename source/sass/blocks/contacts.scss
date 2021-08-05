@@ -1,18 +1,12 @@
 .contacts__link {
+  padding: 0 40px;
   color: rgba($black, $alpha: 0.5);
   text-decoration: none;
 
-  &:not(:first-child) {
-    margin-left: 127px;
-  }
 
   @media (max-width: $mobile) {
     display: block;
     margin-bottom: 22px;
-
-    &:not(:first-child) {
-      margin-left: 0;
-    }
   }
 }
 
