@@ -1,16 +1,16 @@
 .contacts__link {
-  padding: 0 40px;
+  padding: 0 2.5rem;
   color: rgba($black, $alpha: 0.5);
   text-decoration: none;
 
 
   @media (max-width: $mobile) {
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 1.38rem;
   }
 }
 
 .contacts__link svg {
-  margin-bottom: -5px;
-  margin-right: 15px;
+  margin-bottom: -0.31rem;
+  margin-right: 0.93rem;
 }

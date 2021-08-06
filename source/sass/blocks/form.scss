@@ -7,28 +7,35 @@
 }
 
 .form p {
-  margin: 3px 0 20px;
-  font-size: 17px;
+  margin: 0 0 1.18rem;
+  font-size: 1.06rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;
 
   @media (max-width: $tablet) {
-    font-size: 18px;
+    margin: 0 0 1.88rem;
+    font-size: 1.12rem;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 0 1.25rem;
   }
 }
 
 .form input {
-  margin-bottom: 20px;
-  padding: 0 30px;
+  margin-bottom: 1.37rem;
+  padding: 0 1.88rem;
   width: 100%;
-  font-size: 15px;
-  line-height: 3rem;
+  font-size: 0.97rem;
+  line-height: 2.9rem;
   color: rgba($grey-special, 0.5);
   border: none;
   border-radius: 6px;
 
   @media (max-width: $tablet) {
+    margin-bottom: 1.25rem;
+    padding: 0 1.25rem;
     border: 1px solid $grey;
   }
 }

@@ -1,26 +1,23 @@
 .about {
-  padding: 319px calc(59% - 50px) 50px calc(50% - 440px);
-  min-height: 825px;
-  letter-spacing: -0.01em;
+  min-height: 51.56rem;
+  letter-spacing: -0.01rem;
   text-align: left;
   background: url("../img/intro-bg-desktop@1x.jpg") no-repeat center;
   background-size: cover;
   background-color: $black;
 
   @media (max-width: $tablet) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 calc(50% - 240px);
-    min-height: 340px;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    min-height: 21.25rem;
     text-align: inherit;
     background-image: url("../img/intro-bg-tablet@1x.jpg");
     background-size: 100%;
   }
 
   @media (max-width: $mobile) {
-    min-height: 390px;
-    padding: 0 calc(50% - 144px);
+    padding-bottom: 4.31rem;
+    min-height: 24.37rem;
     background-image: url("../img/intro-bg-mobile@1x.jpg");
   }
 }
@@ -32,7 +29,13 @@
   line-height: 4rem;
 
   @media (max-width: $tablet) {
+    margin-bottom: 0.5rem;
     font-size: 1.88rem;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 1.25rem;
+    line-height: 2.62rem;
   }
 }
 
@@ -49,11 +52,15 @@
 }
 
 .about__logo {
-  margin-bottom: 30px;
+  margin-bottom: 1.88rem;
 
   @media (max-width: $tablet) {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 1.56rem;
+    left: 1.37rem;
+  }
+
+  @media (max-width: $mobile) {
+    left: 1.12rem;
   }
 }
