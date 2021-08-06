@@ -1,0 +1,145 @@
+.types {
+  background-color: $light-grey;
+  overflow: hidden;
+}
+
+.types h2 {
+  margin: 0 0 2.7rem;
+  font-size: 1.88rem;
+  font-weight: 600;
+  color: $black-special;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 2.1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.types h3 {
+  margin: 1.4rem 0 0;
+  font-size: 1.38rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.types__list {
+  @include list-style-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.types__item {
+  position: relative;
+  flex: 1 0 0;
+  margin: 0 1.6rem;
+  min-width: 290px;
+  max-width: 21.38rem;
+
+  @media (max-width: $tablet) {
+    // flex: none;
+    margin-bottom: 3.2rem;
+    min-width: 14rem;
+    max-width: 16.9rem;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1000;
+  }
+
+  &:nth-child(3n+1) {
+    margin-top: 0.7rem;
+
+    @media (max-width: $tablet) {
+      margin-top: 0;
+    }
+
+    &::before {
+      top: 50%;
+      left: 0;
+      width: 180px;
+      height: 180px;
+      border: 27px solid $green;
+      border-radius: 50%;
+      transform: translateX(-33%) translateY(-168px);
+      z-index: 100;
+
+      @media (max-width: $tablet) {
+        top: 105%;
+        left: 7px;
+        width: 127px;
+        height: 127px;
+        border-width: 18px;
+      }
+    }
+  }
+
+  &:nth-child(3n-1) {
+    margin-top: 2.4rem;
+
+    @media (max-width: $tablet) {
+      margin-top: 0;
+    }
+
+    &::before,
+    &::after {
+      width: 47px;
+      height: 47px;
+      border: 8px solid $green;
+      transform: translateY(-50%);
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+
+    &::before {
+      top: 6px;
+      left: -19px;
+    }
+
+    &::after {
+      right: -23px;
+      bottom: 5px;
+    }
+  }
+
+  &:nth-child(3n)::before {
+    top: 0;
+    right: 0;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 17px solid $green;
+    transform: translateX(37%) translateY(-32%);
+
+    @media (max-width: $tablet) {
+      width: 68px;
+      height: 68px;
+      border-width: 13px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 100%;
+  }
+}
+
+.types__card {
+  position: relative;
+  z-index: 100;
+}
+
+.types__card img {
+  width: 100%;
+  border-radius: 18px;
+  background-color: $grey;
+}

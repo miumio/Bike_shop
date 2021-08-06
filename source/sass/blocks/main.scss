@@ -3,9 +3,19 @@
 }
 
 .main__facts {
+  margin-bottom: 9.4rem;
   padding: 0 calc(50vw - 37.62rem);
 
   @media (max-width: $tablet) {
+    margin-bottom: 1.7rem;
     padding: 0 calc(50vw - 18.37rem);
+  }
+}
+
+.main__types {
+  padding: 9.12rem 0;
+
+  @media (max-width: $tablet) {
+    padding: 3.4rem calc(50vw - 22rem) 3.4rem;
   }
 }
