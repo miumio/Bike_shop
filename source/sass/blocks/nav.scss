@@ -35,6 +35,15 @@
     0 12px 0 0 $black;
 }
 
+.nav--opened {
+  position: absolute;
+  top: 0;
+
+  @media (max-width: $mobile) {
+    height: 100vh;
+  }
+}
+
 .nav--opened .nav__toggler {
   background-color: $white;
 
