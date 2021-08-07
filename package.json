@@ -2,8 +2,11 @@
   "name": "bike-shop",
   "version": "1.0.0",
   "description": "HTML academy accelerate project",
-  "author": "asya nikolskaya",
-  "license": "unlicensed",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:miumio/Bike_shop.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -23,8 +26,8 @@
     "posthtml-include": "^1.2.0",
     "stylelint": "^13.13.0",
     "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "eslint": "7.18.0",
+    "eslint-config-htmlacademy": "2.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
