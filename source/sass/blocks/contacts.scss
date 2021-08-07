@@ -1,5 +1,9 @@
+.contacts h2 {
+  @include visually-hidden;
+}
+
 .contacts__link {
-  padding: 0 2.5rem;
+  padding: 0 50px 0 32px;
   color: rgba($black, $alpha: 0.5);
   text-decoration: none;
 
@@ -13,4 +17,5 @@
 .contacts__link svg {
   margin-bottom: -0.31rem;
   margin-right: 0.93rem;
+  fill: $white;
 }

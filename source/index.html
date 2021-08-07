@@ -13,16 +13,16 @@
       <button class="nav__toggler btn" aria-label="Toggler"></button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#" class="nav__link">О нас</a>
+          <a href="#facts" class="nav__link">О нас</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Виды велосипедов</a>
+          <a href="#types" class="nav__link">Виды велосипедов</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Видео про велосипеды</a>
+          <a href="#video" class="nav__link">Видео про велосипеды</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Контакты</a>
+          <a href="#contacts" class="nav__link">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -43,7 +43,7 @@
   </header>
   <main class="main">
     <h1>Магазин велосипедов</h1>
-    <section class="main__facts facts">
+    <section class="main__facts facts" id="facts">
       <h2>Несколько фактов о нас</h2>
       <ul class="facts__list">
         <li class="facts__item">
@@ -64,16 +64,17 @@
         </li>
       </ul>
     </section>
-    <section class="main__types types">
+    <section class="main__types types" id="types">
       <h2>Виды велосипедов</h2>
       <ul class="types__list">
         <li class="types__item">
           <article class="types__card">
             <picture>
-              <!-- 1х: 342px; 2x: 684px -->
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/type-road-mobile@1x.webp 1x, img/type-road-mobile@2x.webp 2x">
-              <source type="image/webp" srcset="img/type-road-desktop@1x.webp 1x, img/type-road-desktop@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="img/type-road-mobile@1x.jpg 1x, img/type-road-mobile@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <source type="image/webp" srcset="img/type-road-desktop@1x.webp 1x, img/type-road-desktop@2x.webp 2x">
               <img src="img/type-road-desktop@1x.jpg" srcset="img/type-road-desktop@2x.jpg 2x" width="342" height="503" alt="road bycicle">
             </picture>
             <h3>Дорожный велосипед</h3>
@@ -82,10 +83,11 @@
         <li class="types__item">
           <article class="types__card">
             <picture>
-              <!-- 1х: 342px; 2x: 684px -->
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/type-mountain-mobile@1x.webp 1x, img/type-mountain-mobile@2x.webp 2x">
-              <source type="image/webp" srcset="img/type-mountain-desktop@1x.webp 1x, img/type-mountain-desktop@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="img/type-mountain-mobile@1x.jpg 1x, img/type-mountain-mobile@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <source type="image/webp" srcset="img/type-mountain-desktop@1x.webp 1x, img/type-mountain-desktop@2x.webp 2x">
               <img src="img/type-mountain-desktop@1x.jpg" srcset="img/type-mountain-desktop@2x.jpg 2x" width="342" height="503" alt="mountain bycicle">
             </picture>
             <h3>Горный велосипед</h3>
@@ -94,10 +96,11 @@
         <li class="types__item">
           <article class="types__card">
             <picture>
-              <!-- 1х: 342px; 2x: 684px -->
+              <!-- 1х: 270px; 2x: 540px -->
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/type-kids-mobile@1x.webp 1x, img/type-kids-mobile@2x.webp 2x">
-              <source type="image/webp" srcset="img/type-kids-desktop@1x.webp 1x, img/type-kids-desktop@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="img/type-kids-mobile@1x.jpg 1x, img/type-kids-mobile@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
+              <source type="image/webp" srcset="img/type-kids-desktop@1x.webp 1x, img/type-kids-desktop@2x.webp 2x">
               <img src="img/type-kids-desktop@1x.jpg" srcset="img/type-kids-desktop@2x.jpg 2x" width="342" height="503" alt="kids bycicle">
             </picture>
             <h3>Детский велосипед</h3>
@@ -105,7 +108,28 @@
         </li>
       </ul>
     </section>
-
+    <section class="main__video video" id="video">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="video__block">
+        <picture>
+          <!-- 1х: 288px; 2x: 576px -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/video-cover-mobile@1x.webp 1x, img/video-cover-mobile@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/video-cover-mobile@1x.png 1x, img/video-cover-mobile@2x.png 2x">
+          <!-- 1х: 503px; 2x: 1006px -->
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-cover-tablet@1x.webp 1x, img/video-cover-tablet@2x.webp 2x">
+          <source media="(max-width: 1023px)" srcset="img/video-cover-tablet@1x.png 1x, img/video-cover-tablet@2x.png 2x">
+          <!-- 1х: 929px; 2x: 1858px -->
+          <source type="image/webp" srcset="img/video-cover-desktop@1x.webp 1x, img/video-cover-desktop@2x.webp 2x">
+          <img src="img/video-cover-desktop@1x.png" srcset="img/video-cover-desktop@2x.png 2x" width="929" height="522" alt="Обложка видео">
+        </picture>
+        <button class="video__btn btn" type="button" aria-label="Play">
+          <svg width="13" height="18">
+            <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <section class="footer__map map">
@@ -113,7 +137,7 @@
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253057016!2d30.32085335205239!3d59.938719168964724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595066260512!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
-    <section class="footer__contacts contacts">
+    <section class="footer__contacts contacts" id="contacts">
       <h2>Наши контакты</h2>
       <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__link">
         <svg width="26" height="20">
@@ -122,7 +146,7 @@
         puteshestviemechta@gmail.ru
       </a>
       <a href="tel:+749978468446" class="contacts__link">
-        <svg width="22" height="22">
+        <svg width="22" height="24">
           <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
         </svg>
         +7 (499) 784-684-46

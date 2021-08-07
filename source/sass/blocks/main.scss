@@ -13,9 +13,23 @@
 }
 
 .main__types {
-  padding: 9.12rem 0;
+  padding: 9.12rem calc(50vw - 37.62rem) 9.5rem;
 
   @media (max-width: $tablet) {
-    padding: 3.4rem calc(50vw - 22rem) 3.4rem;
+    padding: 3.4rem calc(50vw - 22rem) 1.3rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 3.4rem calc(50vw - 16rem) 1.3rem;
+  }
+}
+
+.main__video {
+  margin-bottom: 9rem;
+  padding: 7.1rem calc(50vw - 29rem) 0;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 6.4rem;
+    padding: 4.1rem calc(50vw - 15.7rem) 0;
   }
 }
