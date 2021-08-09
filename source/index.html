@@ -35,8 +35,8 @@
       <h2>Оставить заявку для подбора велосипеда</h2>
       <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <form action="https://echo.htmlacademy.ru" method="POST">
-        <input type="text" id="data-name" name="name" placeholder="Введите Ваше Имя">
-        <input type="tel" id="data-phone" name="phone" placeholder="Введите Ваш номер телефона">
+        <input type="text" id="data-name" name="name" placeholder="Введите Ваше Имя" required>
+        <input type="tel" id="data-phone" name="phone" placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" required>
         <button type="submit" class="form__btn btn">Подобрать велосипед мечты</button>
       </form>
     </section>

@@ -40,6 +40,10 @@
   }
 }
 
+.form input:valid {
+  border-color: $green;
+}
+
 .form button {
   width: 100%;
   line-height: 3rem;
