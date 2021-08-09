@@ -1,8 +1,21 @@
 .footer {
-  padding: 6.25rem 0;
+  padding: 6.1rem 0;
 
   @media (max-width: $tablet) {
     padding: 3.12rem 0;
+  }
+}
+
+.footer h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.88rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: $black-special;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 

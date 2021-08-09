@@ -1,7 +1,5 @@
 .facts h2 {
-  margin: 0 0 2.75rem;
-  font-size: 1.88rem;
-  font-weight: 600;
+  margin: 0 0 2.9rem;
   color: $black-special;
 
   @media (max-width: $tablet) {
@@ -18,6 +16,7 @@
   justify-content: center;
   font-size: 1.38rem;
   line-height: 2.21rem;
+  letter-spacing: -0.5px;
 
   @media (max-width: $mobile) {
     display: block;
@@ -39,7 +38,7 @@
 }
 
 .facts__item span {
-  margin-bottom: 1.06rem;
+  margin-bottom: 1.01rem;
   display: block;
   font-size: 1.75rem;
   font-weight: 700;

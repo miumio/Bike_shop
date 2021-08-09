@@ -9,9 +9,7 @@
 }
 
 .video h2 {
-  margin: 0 0 1.1rem;
-  font-size: 1.88rem;
-  font-weight: 600;
+  margin: 0 0 1rem;
 
   @media (max-width: $tablet) {
     margin-bottom: 1.3rem;
@@ -53,8 +51,6 @@
   cursor: pointer;
 
   @media (max-width: $tablet) {
-    // width: 90px;
-    // height: 90px;
     transform: scale(139%) translateX(-34%) translateY(-36%);
   }
 }

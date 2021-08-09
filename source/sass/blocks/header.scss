@@ -12,7 +12,7 @@
 .header__nav {
   position: absolute;
   top: 0;
-  padding: 0 calc(50vw - 27.37rem);
+  padding: 0 calc(50vw - 30.2rem);
   margin-bottom: 16.56rem;
   width: 100%;
 
@@ -25,7 +25,7 @@
 }
 
 .header__about {
-  padding: 19.94rem calc(55% - 3.12rem) 3.12rem calc(50% - 27.5rem);
+  padding: 19.94rem calc(55% - 3rem) 3.12rem calc(50% - 27.5rem);
 
   @media (max-width: $tablet) {
     position: relative;
@@ -42,9 +42,9 @@
 
 .header__form {
   position: absolute;
-  top: 20.25rem;
-  left: calc(50% + 7rem);
-  width: 20.27rem;
+  top: 323px;
+  left: calc(50% + 113px);
+  width: 20.4rem;
 
   @media (max-width: $tablet) {
     position: initial;

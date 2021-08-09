@@ -2,6 +2,12 @@
   @include visually-hidden;
 }
 
+.main h2 {
+  font-size: 1.88rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 .main__facts {
   margin-bottom: 9.4rem;
   padding: 0 calc(50vw - 37.62rem);
@@ -13,7 +19,7 @@
 }
 
 .main__types {
-  padding: 9.12rem calc(50vw - 37.62rem) 9.5rem;
+  padding: 9.09rem calc(50vw - 37.62rem) 9.5rem;
 
   @media (max-width: $tablet) {
     padding: 3.4rem calc(50vw - 22rem) 1.3rem;
