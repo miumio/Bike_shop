@@ -23,6 +23,10 @@
   }
 }
 
+.form label {
+  @include visually-hidden;
+}
+
 .form input {
   margin-bottom: 1.2rem;
   padding: 0.2rem 1.88rem 0;
