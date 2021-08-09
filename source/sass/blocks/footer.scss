@@ -4,6 +4,10 @@
   @media (max-width: $tablet) {
     padding: 3.12rem 0;
   }
+
+  @media (max-width: $mobile) {
+    padding: 1.3rem 0;
+  }
 }
 
 .footer h2 {
@@ -17,6 +21,11 @@
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 1.4rem;
+    font-size: 1.12rem;
+  }
 }
 
 .footer__map {
@@ -28,5 +37,13 @@
 
   @media (max-width: $mobile) {
     padding: 0;
+  }
+}
+
+.footer__contacts {
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    padding: 0 20px 0 30px;
+    width: 20rem;
   }
 }

@@ -1,3 +1,9 @@
+.contacts {
+  @media (max-width: $mobile) {
+    text-align: left;
+  }
+}
+
 .contacts h2 {
   @include visually-hidden;
 }
@@ -11,6 +17,11 @@
   @media (max-width: $mobile) {
     display: block;
     margin-bottom: 1.38rem;
+    padding: 0;
+
+    &--phone {
+      padding-left: 1.82rem;
+    }
   }
 }
 

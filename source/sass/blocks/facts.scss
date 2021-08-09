@@ -33,7 +33,16 @@
   }
 
   @media (max-width: $mobile) {
+    margin-bottom: 3rem;
     max-width: 17rem;
+  }
+}
+
+.facts__item:first-child {
+  margin-bottom: 2.4rem;
+
+  span {
+    margin-bottom: 1.1rem;
   }
 }
 
@@ -45,6 +54,6 @@
   color: $green;
 
   @media (max-width: $mobile) {
-    margin-bottom: 1.56rem;
+    margin-bottom: 0.4rem;
   }
 }

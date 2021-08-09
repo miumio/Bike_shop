@@ -9,24 +9,28 @@
 }
 
 .main__facts {
-  margin-bottom: 9.4rem;
+  margin-bottom: 6.9rem;
   padding: 0 calc(50vw - 37.62rem);
 
   @media (max-width: $tablet) {
     margin-bottom: 1.7rem;
     padding: 0 calc(50vw - 18.37rem);
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 5.1rem;
+  }
 }
 
 .main__types {
-  padding: 9.09rem calc(50vw - 37.62rem) 9.5rem;
+  padding: 9rem calc(50vw - 37.62rem) 9.5rem;
 
   @media (max-width: $tablet) {
     padding: 3.4rem calc(50vw - 22rem) 1.3rem;
   }
 
   @media (max-width: $mobile) {
-    padding: 3.4rem calc(50vw - 16rem) 1.3rem;
+    padding: 3.4rem calc(50vw - 16rem) 0.6rem;
   }
 }
 
@@ -37,5 +41,9 @@
   @media (max-width: $tablet) {
     margin-bottom: 6.4rem;
     padding: 4.2rem calc(50vw - 15.7rem) 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 5.2rem calc(50vw - 9rem) 0;
   }
 }

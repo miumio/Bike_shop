@@ -20,6 +20,7 @@
 
   @media (max-width: $mobile) {
     margin: 0 0 1.25rem;
+    letter-spacing: 0;
   }
 }
 
@@ -41,6 +42,12 @@
     margin-bottom: 1.25rem;
     padding: 0 1.25rem;
     border: 1px solid $grey;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 1.2rem;
+    padding: 0.2rem 1.5rem 0;
+    line-height: 2.7rem;
   }
 }
 

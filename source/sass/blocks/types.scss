@@ -45,6 +45,10 @@
     max-width: 16.9rem;
   }
 
+  @media (max-width: $mobile) {
+    margin-bottom: 2.85rem;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -75,6 +79,10 @@
         width: 127px;
         height: 127px;
         border-width: 18px;
+      }
+
+      @media (max-width: $mobile) {
+        left: 15px;
       }
     }
   }
@@ -122,6 +130,10 @@
       width: 68px;
       height: 68px;
       border-width: 13px;
+    }
+
+    @media (max-width: $mobile) {
+      right: 10px;
     }
   }
 
