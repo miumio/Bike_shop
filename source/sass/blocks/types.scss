@@ -62,28 +62,28 @@
     @media (max-width: $tablet) {
       margin-top: 0;
     }
+  }
 
-    &::before {
-      top: 50%;
-      left: 0;
-      width: 180px;
-      height: 180px;
-      border: 27px solid $green;
-      border-radius: 50%;
-      transform: translateX(-33%) translateY(-168px);
-      z-index: 100;
+  &:nth-child(3n+1)::before {
+    top: 50%;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    border: 27px solid $green;
+    border-radius: 50%;
+    transform: translateX(-33%) translateY(-168px);
+    z-index: 100;
 
-      @media (max-width: $tablet) {
-        top: 105%;
-        left: 7px;
-        width: 127px;
-        height: 127px;
-        border-width: 18px;
-      }
+    @media (max-width: $tablet) {
+      top: 105%;
+      left: 7px;
+      width: 127px;
+      height: 127px;
+      border-width: 18px;
+    }
 
-      @media (max-width: $mobile) {
-        left: 15px;
-      }
+    @media (max-width: $mobile) {
+      left: 15px;
     }
   }
 
@@ -93,28 +93,28 @@
     @media (max-width: $tablet) {
       margin-top: 0;
     }
+  }
 
-    &::before,
-    &::after {
-      width: 47px;
-      height: 47px;
-      border: 8px solid $green;
-      transform: translateY(-50%);
+  &:nth-child(3n-1)::before,
+  &:nth-child(3n-1)::after {
+    width: 47px;
+    height: 47px;
+    border: 8px solid $green;
+    transform: translateY(-50%);
 
-      @media (max-width: $tablet) {
-        display: none;
-      }
+    @media (max-width: $tablet) {
+      display: none;
     }
+  }
 
-    &::before {
-      top: 6px;
-      left: -19px;
-    }
+  &:nth-child(3n-1)::before {
+    top: 6px;
+    left: -19px;
+  }
 
-    &::after {
-      right: -23px;
-      bottom: 5px;
-    }
+  &:nth-child(3n-1)::after {
+    right: -23px;
+    bottom: 5px;
   }
 
   &:nth-child(3n)::before {
@@ -148,6 +148,7 @@
 }
 
 .types__card img {
+  width: 100%;
   border-radius: 12px;
   background-color: $grey;
 }
