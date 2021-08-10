@@ -34,9 +34,8 @@
   }
 }
 
-.about h2 {
-  margin: 0;
-  margin-bottom: 1.5rem;
+.about h1 {
+  margin: 1.88rem 0 1.5rem;
   font-size: 2.88rem;
   line-height: 4rem;
 
@@ -66,9 +65,6 @@
 }
 
 .about__logo {
-  margin-bottom: 1.88rem;
-  width: auto;
-
   @media (max-width: $tablet) {
     position: absolute;
     top: 1.56rem;
