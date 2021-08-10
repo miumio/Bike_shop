@@ -15,6 +15,9 @@
       nav.classList.add('nav--closed');
       nav.classList.remove('nav--opened');
     }
-  });
+  },
+    { passive: true },
+    { once: true },
+  );
 
 })();

@@ -29,7 +29,8 @@
           location.hash = hash
         }
       }
-    }, false);
+    },
+      false);
   });
 
 })();
