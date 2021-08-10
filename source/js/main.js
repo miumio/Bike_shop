@@ -16,25 +16,29 @@ toggler.addEventListener('click', function () {
   }
 });
 
-const links = document.querySelectorAll('a[href*="#"]');
-const animationTime = 300;
-const framesCount = 20;
+const links = document.querySelectorAll('.nav__link');
+const SPEED = 0.2;
 
-links.forEach(function (item) {
+links.forEach((item) => {
   item.addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+    let scroll = window.pageYOffset;
+    let hash = this.href.replace(/[^#]*(.*)/, '$1');
+    let top = document.querySelector(hash).getBoundingClientRect().top;
+    let start = null;
+    requestAnimationFrame(step);
 
-    let scroller = setInterval(function () {
-      let scrollBy = coordY / framesCount;
-
-      if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-        window.scrollBy(0, scrollBy);
+    function step(time) {
+      if (start === null) start = time;
+      let progress = time - start;
+      let r = (top < 0 ? Math.max(scroll - progress / SPEED, scroll + top) : Math.min(scroll + progress / SPEED, scroll + top));
+      window.scrollTo(0, r);
+      if (r !== scroll + top) {
+        requestAnimationFrame(step)
       } else {
-        window.scrollTo(0, coordY);
-        clearInterval(scroller);
+        location.hash = hash
       }
-    }, animationTime / framesCount);
-  });
+    }
+  }, false);
 });
