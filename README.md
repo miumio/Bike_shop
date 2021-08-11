@@ -1,4 +1,4 @@
-# Bike shop 
+# [Bike shop](http://bike_shop.surge.sh/) 
 
 ## [HTML Academy](https://htmlacademy.ru/) accelerator project
 
