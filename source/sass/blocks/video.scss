@@ -67,7 +67,6 @@
   height: 65px;
   border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
-  cursor: pointer;
 
   @media (max-width: $tablet) {
     transform: scale(139%) translateX(-34%) translateY(-36%);
