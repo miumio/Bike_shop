@@ -42,13 +42,13 @@
 
 .header__inner {
   display: flex;
-  margin-top: -514px;
+  margin-top: -507px;
   padding: 0 calc(50vw - 27.5rem);
 
   @media (max-width: $tablet) {
     display: block;
     position: relative;
-    margin-top: -243px;
+    margin-top: -234px;
     padding: 0;
   }
 
@@ -67,7 +67,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 8.8rem;
+    margin-bottom: 8.7rem;
   }
 }
 
@@ -75,7 +75,7 @@
   flex: 1 1 385px;
 
   @media (max-width: $tablet) {
-    padding: 0 calc(50vw - 10.5rem);
+    padding: 0 calc(50vw - 10rem);
   }
 
   @media (max-width: $mobile) {
