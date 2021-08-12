@@ -1,4 +1,8 @@
 .contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   @media (max-width: $mobile) {
     text-align: left;
   }
@@ -9,7 +13,7 @@
 }
 
 .contacts__link {
-  padding: 0 3.37rem 0 2rem;
+  padding: 1rem 3.56rem 1rem 2.12rem;
   color: rgba($black, $alpha: 0.5);
   text-decoration: none;
 
