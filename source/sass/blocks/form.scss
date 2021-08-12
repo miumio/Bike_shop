@@ -1,5 +1,15 @@
 .form {
   text-align: center;
+
+  @media (max-width: $tablet) {
+    background-color: $white;
+  }
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 33rem;
+  }
 }
 
 .form h2 {
@@ -14,13 +24,15 @@
   letter-spacing: -0.01em;
 
   @media (max-width: $tablet) {
-    margin: 0 0 1.9rem;
+    margin: 0 auto 1.9rem;
+    max-width: 20rem;
     font-size: 1.12rem;
     color: $black;
   }
 
   @media (max-width: $mobile) {
-    margin: 0 0 1.25rem;
+    margin-bottom: 1.25rem;
+    max-width: 16rem;
     letter-spacing: 0;
   }
 }

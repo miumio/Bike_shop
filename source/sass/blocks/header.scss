@@ -49,12 +49,12 @@
     display: block;
     position: relative;
     margin-top: -234px;
-    padding: 0;
+    padding: 0 10rem;
   }
 
   @media (max-width: $mobile) {
     margin-top: -296px;
-    padding: 0 calc(50vw - 9rem);
+    padding: 0 2rem;
   }
 }
 
@@ -62,7 +62,7 @@
   padding-right: 2rem;
 
   @media (max-width: $tablet) {
-    margin-bottom: 9.23rem;
+    margin-bottom: 7.23rem;
     padding: 0;
   }
 
@@ -75,10 +75,6 @@
   flex: 1 1 385px;
 
   @media (max-width: $tablet) {
-    padding: 0 calc(50vw - 10rem);
-  }
-
-  @media (max-width: $mobile) {
-    padding: 0;
+    padding: 2rem 4rem 0;
   }
 }

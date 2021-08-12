@@ -20,7 +20,8 @@
   }
 
   @media (max-width: $mobile) {
-    margin: 1.8rem 0 1.25rem;
+    margin: 1.8rem auto 1.25rem;
+    width: 288px;
     line-height: 2.62rem;
   }
 }
@@ -39,6 +40,10 @@
     padding: 0;
     font-size: 1.13rem;
   }
+
+  @media (max-width: $mobile) {
+    max-width: 300px;
+  }
 }
 
 .about__logo {
@@ -48,12 +53,12 @@
 
   @media (max-width: $tablet) {
     position: absolute;
-    top: -105px;
+    top: -101px;
     left: 22px;
   }
 
   @media (max-width: $mobile) {
-    top: -103px;
+    top: -98px;
     left: 18px;
   }
 }
