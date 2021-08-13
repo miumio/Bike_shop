@@ -131,6 +131,14 @@
     color: $dark;
     opacity: 1;
   }
+
+  &:hover {
+    opacity: 1;
+
+    @media (max-width: $tablet) {
+      color: $green;
+    }
+  }
 }
 
 @media (max-width: $tablet) {

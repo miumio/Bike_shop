@@ -27,6 +27,10 @@
       padding-left: 1.82rem;
     }
   }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .contacts__link svg {
