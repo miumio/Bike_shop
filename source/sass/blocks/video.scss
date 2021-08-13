@@ -1,25 +1,23 @@
 .video {
-  position: relative;
   color: $white;
-  min-height: 803px;
-  background-color: $black-extra;
-  border-bottom: 100px solid $white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect fill='%23131314' width='20' height='20'/%3E%3C/svg%3E");
+  background-size: 100% 706px;
+  background-repeat: no-repeat;
+  background-position: top;
 
   @media (max-width: $tablet) {
-    min-height: 498px;
-    border-width: 85px;
+    background-size: 100% 413px;
   }
 
   @media (max-width: $mobile) {
-    min-height: 433px;
-    border-width: 48px;
+    background-size: 100% 384px;
   }
 }
 
 .video h2 {
   margin: 0;
-  padding: 2rem calc(50vw - 15.7rem) 1rem;
-  background-color: $black-extra;
+  margin-bottom: 0.75rem;
+
 
   @media (max-width: $tablet) {
     margin-bottom: 1.3rem;
@@ -29,74 +27,45 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 1.2rem;
-    padding: 0 1rem;
   }
 }
 
 .video p {
-  margin: 0 0 3.44rem;
-  padding: 0 calc(50vw - 12.7rem) 0;
+  margin: 0 auto 3.5rem;
+  max-width: 26rem;
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 300;
   color: rgba($white, 0.7);
-  background-color: $black-extra;
 
   @media (max-width: $tablet) {
     margin-bottom: 2.44rem;
-    padding: 0 calc(50vw - 14.7rem) 0;
+    max-width: 27rem;
   }
 
   @media (max-width: $mobile) {
     margin-bottom: 3.31rem;
-    padding: 0 calc(50vw - 9.5rem);
     letter-spacing: -0.01em;
   }
 }
 
-.video__inner {
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  width: 100%;
-  transform: translateX(-50%);
-
-  @media (max-width: $tablet) {
-    bottom: -85px;
-  }
-
-  @media (max-width: $mobile) {
-    bottom: -48px;
-  }
-}
-
-.video__inner img {
-  margin: 0 auto;
-  max-width: 929px;
-
-  @media (max-width: $tablet) {
-    max-width: 503px;
-  }
-
-  @media (max-width: $mobile) {
-    max-width: 288px;
-  }
+.video__box {
+  position: relative;
 }
 
 .video__btn {
   position: absolute;
-  bottom: 229px;
+  top: 50%;
   left: 50%;
   padding: 22px 9px 30px 16px;
   width: 65px;
   height: 65px;
   font-size: 1.19rem;
   border-radius: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
 
   @media (max-width: $tablet) {
-    bottom: 110px;
-    transform: scale(139%) translateX(-34%);
+    transform: scale(136%) translateX(-37%) translateY(-35%);
   }
 
   @media (max-width: $mobile) {

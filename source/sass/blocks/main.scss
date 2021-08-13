@@ -31,7 +31,8 @@
 }
 
 .main__video {
-  margin-bottom: 9rem;
+  margin-bottom: 9.2rem;
+  padding: 7.2rem calc(50vw - 29rem) 0;
 
   @media (max-width: $tablet) {
     margin-bottom: 1.18rem;
@@ -40,6 +41,6 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 3.3rem;
-    padding: 5.2rem 0 0;
+    padding: 5.2rem 1rem 0;
   }
 }
