@@ -1,16 +1,13 @@
 .video {
   color: $white;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Crect fill='%23131314' width='20' height='20'/%3E%3C/svg%3E");
-  background-size: 100% 706px;
-  background-repeat: no-repeat;
-  background-position: top;
+  background: linear-gradient(0deg, $white 0%, $white 12%, $black 12%, $black 100%);
 
   @media (max-width: $tablet) {
-    background-size: 100% 413px;
+    background: linear-gradient(0deg, $white 0%, $white 17%, $black 17%, $black 100%);
   }
 
   @media (max-width: $mobile) {
-    background-size: 100% 384px;
+    background: linear-gradient(0deg, $white 0%, $white 11%, $black 11%, $black 100%);
   }
 }
 
