@@ -1,22 +1,29 @@
 .video {
+  position: relative;
   color: $white;
-  min-height: 706px;
+  min-height: 803px;
   background-color: $black-extra;
+  border-bottom: 100px solid $white;
 
   @media (max-width: $tablet) {
-    min-height: 413px;
+    min-height: 498px;
+    border-width: 85px;
   }
 
   @media (max-width: $mobile) {
-    min-height: 384px;
+    min-height: 433px;
+    border-width: 48px;
   }
 }
 
 .video h2 {
-  margin: 0 0 1rem;
+  margin: 0;
+  padding: 2rem calc(50vw - 15.7rem) 1rem;
+  background-color: $black-extra;
 
   @media (max-width: $tablet) {
     margin-bottom: 1.3rem;
+    padding: 0;
     font-size: 1.5rem;
   }
 
@@ -27,54 +34,73 @@
 }
 
 .video p {
-  margin: 0;
-  padding: 0 17rem;
+  margin: 0 0 3.44rem;
+  padding: 0 calc(50vw - 12.7rem) 0;
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 300;
   color: rgba($white, 0.7);
+  background-color: $black-extra;
 
   @media (max-width: $tablet) {
-    padding: 0 1rem;
+    margin-bottom: 2.44rem;
+    padding: 0 calc(50vw - 14.7rem) 0;
   }
 
   @media (max-width: $mobile) {
-    padding: 0 1rem;
+    margin-bottom: 3.31rem;
+    padding: 0 calc(50vw - 9.5rem);
     letter-spacing: -0.01em;
   }
 }
 
-.video__block {
-  position: relative;
-  margin-top: -207px;
-  transform: translateY(50%);
+.video__inner {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
 
   @media (max-width: $tablet) {
-    margin-top: -100px;
+    bottom: -85px;
   }
 
   @media (max-width: $mobile) {
-    margin: -30px auto 0;
-    width: 90%;
+    bottom: -48px;
+  }
+}
+
+.video__inner img {
+  margin: 0 auto;
+  max-width: 929px;
+
+  @media (max-width: $tablet) {
+    max-width: 503px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 288px;
   }
 }
 
 .video__btn {
   position: absolute;
-  top: 50%;
+  bottom: 229px;
   left: 50%;
   padding: 22px 9px 30px 16px;
   width: 65px;
   height: 65px;
   font-size: 1.19rem;
   border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%);
 
   @media (max-width: $tablet) {
-    transform: scale(139%) translateX(-34%) translateY(-38%);
+    bottom: 110px;
+    transform: scale(139%) translateX(-34%);
   }
 
   @media (max-width: $mobile) {
+    bottom: 18px;
     transform: translateX(-50%) translateY(-50%);
   }
 }

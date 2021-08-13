@@ -21,7 +21,7 @@
 
   @media (max-width: $mobile) {
     margin: 1.8rem auto 1.25rem;
-    width: 288px;
+    max-width: 288px;
     line-height: 2.62rem;
   }
 }
