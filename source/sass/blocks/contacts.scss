@@ -14,7 +14,7 @@
 }
 
 .contacts__link {
-  padding: 1rem 3.56rem 1rem 2.12rem;
+  padding: 1rem;
   color: rgba($black, $alpha: 0.5);
   text-decoration: none;
 
@@ -23,14 +23,14 @@
     display: block;
     margin-bottom: 1.38rem;
     padding: 0;
-
-    &--phone {
-      padding-left: 1.82rem;
-    }
   }
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2rem;
   }
 }
 
